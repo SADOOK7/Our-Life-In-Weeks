@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@700&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("luffy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 , h2, h4, p{
+    font-family: 'Miriam Libre';
+    font-size: 20px;
+    margin: 5px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px rgb(63, 62, 62);
+    color: honeydew;
+}
+
+h1{
+    font-size: 40px;
+    color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    width: 50vw;
+    backdrop-filter: blur(8px);
+    border-top: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 20px 20px 10px rgba(31, 30, 30, 0.747);
+    overflow: hidden;
+    padding: 20px;
+    background: rgba(20, 17, 17, 0.1);
+}
+
+#typing-Area{
+    height: 40%;
+    width: 50%;
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.answer{
+    display: none;
+}
+
+.answer.active{
+    display: block;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 30%;
+}
+
+input{
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(78, 76, 76, 0.301);
+    color: grey;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+
+input::placeholder{
+    color: rgba(31, 30, 30, 0.747);
+    font-size: 1.4rem;
+}
+
+input:focus{
+    background-color: white;
+}
+
+#calbtn{
+    background-color: rgba(104, 103, 103, 0.404);
+    color: white;
+    margin: 5px;
+    width: 70%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#resetbtn{
+    background-color: rgba(104, 103, 103, 0.404);
+    color: white;
+    margin: 5px;
+    width: 70%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#calbtn:hover{
+    background-color: #fd8c00;
+}
+
+#resetbtn:hover{
+    background-color: black;
+}
+
+#calbtn:active, #resetbtn:active{
+    transform: scale(0.98);
+}
+
+.alert1{
+    display: none;
+}
+
+.alert1.active{
+    display: block;
+}
+
+.alert2{
+    display: none;
+}
+
+.alert2.active{
+    display: block;
+}
+
+.refresh{
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .container {
+        width: 60vw;
+    }
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 80vw;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .container h4 {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 300px) {
+    .container {
+        width: 90vw;
+    }
+}
